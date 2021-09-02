@@ -1,0 +1,135 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(29, 252, 140);
+    align-items: center;
+    border: 20px red;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    position: fixed;
+    /* height: 100%; */
+    overflow: auto;
+  }
+  
+  li a {
+    display: block;
+    color: rgba(74, 82, 72, 0.733);
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  li a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  li a:hover{
+    background-color: #555;
+    color: white;
+    text-decoration: none;
+  }
+
+.fas{
+    padding: 5px;
+}
+
+.div-electricity{
+    margin-left: 15%;
+    margin-bottom: 200px;
+}
+
+.e-calc{
+    text-align: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    letter-spacing: 4px;
+}
+
+
+h2{
+    font-size: 20px;
+}
+
+.textboxInput{
+    padding: 5px;
+    margin: 10px;
+    position: relative;
+    border: none;
+}
+
+.textbox{
+    padding: 5px;
+    margin: 5px;
+    position: relative;
+    background: none;
+    border: none;
+    text-align: center;
+}
+
+input:focus {
+    outline: none !important;
+}
+
+
+label{
+    padding: 10px;
+}
+
+#calc, #clr{
+    padding: 10px;
+    width: 100px;
+    color:white;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: none;
+}
+
+#calc{
+    background-color:rgb(10, 206, 10);
+}
+
+#clr{
+    background-color: rgb(248, 68, 68);
+}
+
+#calc:hover{
+    background-color:rgb(1, 155, 1);
+}
+
+#clr:hover{
+    background-color: rgb(180, 16, 16);
+}
+
+table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    box-shadow: 0 0 10px rgb(121, 148, 111);
+    background-color: rgb(197, 255, 163);
+}
+
+.currency{
+    padding: 10px;
+    display: inline-block;
+}
+
+.currency-calc{
+    padding: 10px;
+    font-weight: bold;
+    display: inline;
+}
+
+.msg{
+    font-size: 30px;
+    color: rgb(88, 172, 55);
+    background: rgb(116, 253, 169);
+    width: 80%;
+}

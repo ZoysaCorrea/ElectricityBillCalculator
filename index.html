@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Calculator</title>
+</head>
+<body>
+    
+    <ul>
+        <li><a href="#e-calc" class="active"><i class="fas fa-bolt"></i></a></li>
+        <li><a href="#currency-calc"><i class="fas fa-rupee-sign"></i></a></li>
+      </ul>
+
+      <div class="div-electricity">
+    <form class="electricity-calc reset">
+        <h1 class="e-calc" id="e-calc">Electricity charges Calculator</h1>
+
+        <h2>Input</h2>
+        
+        <!--Total watts of a rig-->
+        <label for="t-watt">Total watts(per hour):
+        <input type="text" class="textboxInput" placeholder="e.g. 650w" id="t-watt"></input>
+        </label><br>
+
+        <!--Revenue-->
+        </td><label for="rev">Total revenue earned:
+        <input type="text" class="textboxInput" placeholder="Enter revenue earned" id="rev"></input>
+        </label><br>
+        
+        <button id="calc" onclick="calculate(); return false;">Calculate</button>
+        <button id="clr" onclick="">Clear</button>
+
+        <h2>Result:</h2>
+        <table border="1">
+        <tr>
+        <td><label>Watts/day:</td>
+            <td><input type="text" id="w-day" class="textbox" readonly></input></td>
+        </label>
+        </tr>
+
+        <tr>
+        <td><label>Kilo Watts/day:</td>
+            <td><input type="text" id="kw-day" class="textbox" readonly></input></td>
+        </label>
+        </tr>
+
+        <tr>
+        <td><label>Kilo Watts/month:</td>
+            <td><input type="text" id="kw-month" class="textbox" readonly></input></td>
+        </label>
+        </tr>
+
+        <tr>
+        <td><label>Energy charge/Unit:</td>
+            <td><input type="text" id="e-unit" class="textbox" readonly></input></td>
+        </label>
+        </tr>
+
+        <tr>
+        <td><label>Wheeling charge/Unit:</td>
+            <td><input type="text" id="w-unit" class="textbox" readonly></input></td>
+        </label>
+        </tr>
+
+        <tr>
+        <td><label>Fixed charge/Month:</td>
+            <td><input type="text" id="f-month" class="textbox" readonly></input></td>
+        </label>
+        </tr>
+
+        <tr>
+        <td><label>Total Electricity Cost/month:</td>
+            <td><input type="text" id="t-cost" class="textbox" readonly></input></td>
+        </label>
+        </tr>
+
+        <tr>
+        <td><label>Profit/month:</td>
+            <td><input type="text" id="p-month" class="textbox" readonly-></input></td>
+        </label>
+        </tr>
+    </table>
+    </form>
+
+    <h1 class="e-calc">Currency Converter</h1>
+    <form class="currency-calc" id="currency-calc">
+        <label for="dollar">Dollars ($)
+            <input type="number" class="currency" id="dollar" oninput="currency();">
+        </label>
+        <span><i class="fas fa-arrow-right"></i></span>
+        <label for="rupees">Rupees (&#x20B9;)
+            <input type="number" class="currency" id="inr" oninput="currency2();">
+        </label><br>
+    </form>
+    <p class="msg" id="msg"></p>
+        <p class="msg2" id="msg2"></p>
+</div>
+    <script src="script.js">
+    </script>
+</body>
+</html>
